@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Intern</string>
+
+    <string name="Gender">""</string>
+
+    <string-array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "97273429781",
+    "firebase_url": "https://intern-6f702.firebaseio.com",
+    "project_id": "intern-6f702",
+    "storage_bucket": "intern-6f702.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97273429781:android:d3730d605933ae06",
+        "android_client_info": {
+          "package_name": "com.example.me.intern"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97273429781-0tgv6ik9ncku7u8rfgpr8kadmkrugtvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB71dU6qdyP_dg0NmcRxBFn8SyvxX8Rls"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
