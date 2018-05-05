@@ -46,11 +46,9 @@ public class RSSReader extends ListActivity {
                 factory.setNamespaceAware(false);
                 XmlPullParser xpp = factory.newPullParser();
 
-                // We will get the XML from an input stream
                 xpp.setInput(getInputStream(url), "UTF_8");
                 boolean insideItem = false;
 
-                // Returns the type of current event: START_TAG, END_TAG, etc..
                 int eventType = xpp.getEventType();
                 while (eventType != XmlPullParser.END_DOCUMENT)
                 {
@@ -63,19 +61,19 @@ public class RSSReader extends ListActivity {
                         else if (xpp.getName().equalsIgnoreCase("title"))
                         {
                             if (insideItem)
-                                headlines.add(xpp.nextText()); //extract the headline
+                                headlines.add(xpp.nextText());
                         }
                         else if (xpp.getName().equalsIgnoreCase("link"))
                         {
                             if (insideItem)
-                                links.add(xpp.nextText()); //extract the link of article
+                                links.add(xpp.nextText());
                         }
                     }
                     else if(eventType==XmlPullParser.END_TAG && xpp.getName().equalsIgnoreCase("item"))
                     {
                         insideItem=false;
                     }
-                    eventType = xpp.next(); //move to next element
+                    eventType = xpp.next();
                 }
 
             }
